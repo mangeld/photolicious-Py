@@ -68,12 +68,12 @@ body
 			margin-right: 1rem;
 			float: right;
 			text-shadow: 2px 2px 0 $shadow + #111;
+			
+			i { margin: 0 .3rem; }
+			a { color: $white; }
+
 		}
 
-		.social i 
-		{
-			margin: 0 .3rem;
-		}
 	}
 
 	.blog_content
@@ -84,7 +84,7 @@ body
 		margin-top: 2rem;
 		padding: 0 2rem 0 2rem;
 		
-		text-justify: justify;
+		text-align: justify;
 
 		h2 { text-align: center; }
 		p { margin: 1rem 4rem 0 4rem; }
