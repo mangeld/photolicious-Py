@@ -1,0 +1,55 @@
+@import "font_declaration.css";
+@import "reset.css";
+
+$white: #e3e3e3;
+$black: #555;
+$shadow: #222;
+
+$header_size: 325px;
+$blog_width: 960px;
+
+main
+{
+	width: 100%;
+}
+
+body
+{
+	font-family: Montserrat;
+	font-size: 14px;
+	background-color: $black;
+}
+
+.blog_center
+{
+	width: $blog_width;
+	height: 2500px;
+	margin: 0 auto;
+	/* h-pos v-pos blur-dist spread-dist color*/
+	box-shadow: 0 0 35px 0 $shadow;
+	background-color: $white;
+	position: relative;
+	top: 0;
+	left: 0;
+	
+	.blog_header
+	{
+		position: fixed;
+		top: 0;
+		left: 50%;
+		height: $header_size;
+		width: $blog_width;
+		margin-left: -$blog_width / 2;
+		background: url( "../img/image.jpg" ) no-repeat right top;
+		background-size: 100% auto;
+		background-origin: content-box;
+		z-index: 1;
+	}
+
+	.blog_content
+	{
+		position: relative;
+		top: $header_size;
+		z-index: 0;
+	}
+}
