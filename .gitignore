@@ -1,2 +1,6 @@
 README.*
 !README.md
+Prepros Build/*
+*.css
+img/*
+prepros.cfg
