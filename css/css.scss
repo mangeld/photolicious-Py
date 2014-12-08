@@ -3,7 +3,9 @@
 
 $white: #e3e3e3;
 $black: #555;
+$black_x2: #222;
 $shadow: #222;
+$blue: #5757E7;
 
 $header_size: 325px;
 $blog_width: 960px;
@@ -19,6 +21,7 @@ body
 	font-family: Montserrat;
 	font-size: $font_size;
 	background-color: $black;
+	color: $black_x2;
 }
 
 .blog_center
@@ -82,13 +85,23 @@ body
 		top: 0;
 		z-index: 0;
 		margin-top: 2rem;
-		padding: 0 2rem 0 2rem;
+		padding: 0 7rem;
 		
 		text-align: justify;
 
 		h2 { text-align: center; }
-		p { margin: 1rem 4rem 0 4rem; }
+		p { margin: 1rem 0; }
 
+		.post_footer
+		{
+			font-size: .75rem;
+		}
+
+		.profile_link
+		{
+			color: $blue;
+			font-weight: bold;
+		}
 	}
 }
 
@@ -107,4 +120,9 @@ body
 h2
 {
 	font-size: 2em;
+}
+
+a
+{
+	text-decoration: none;
 }
