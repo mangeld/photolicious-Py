@@ -62,7 +62,9 @@ body {
     .blog_center .blog_content h2 {
       text-align: center; }
     .blog_center .blog_content p {
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      font-size: 0.95rem;
+      font-family: Sanchez-Regular; }
     .blog_center .blog_content .post_footer {
       font-size: .75rem; }
     .blog_center .blog_content .profile_link {

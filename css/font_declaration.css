@@ -3,3 +3,9 @@
 	font-family: Montserrat;
 	src: url("../fonts/Montserrat-Regular.ttf");
 }
+
+@font-face
+{
+	font-family: Sanchez-Regular;
+	src: url("../fonts/Sanchez-Regular.ttf");
+}

@@ -90,7 +90,12 @@ body
 		text-align: justify;
 
 		h2 { text-align: center; }
-		p { margin: 1rem 0; }
+		p
+		{
+			margin: 1rem 0;
+			font-size: 0.95rem;
+			font-family: Sanchez-Regular;
+		}
 
 		.post_footer
 		{
