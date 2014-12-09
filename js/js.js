@@ -19,7 +19,7 @@ $(document).ready(function(){
 		else if (pos < treshold)
 		{
 			remove_classes();
-			if(pos > 300) { calc_background_pos(pos); }
+			if(pos < 273) { calc_background_pos(pos); }
 		}
 	}
 
