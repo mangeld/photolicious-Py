@@ -9,6 +9,7 @@ $blue: #5757E7;
 $red: #B55;
 
 $header_size: 325px;
+$min_header_size: 50px;
 $blog_width: 960px;
 $font_size: 14px;
 
@@ -98,6 +99,11 @@ body
 			font-family: Sanchez-Regular;
 		}
 
+		.blog_post
+		{
+			margin-bottom: 3rem;
+		}
+
 		.post_footer
 		{
 			font-size: .75rem;
@@ -123,13 +129,13 @@ body
 .blog_header_fixed
 {
 	position: fixed !important;
-	top: 50px - $header_size !important;
+	top: $min_header_size - $header_size !important;
 }
 
 .blog_content_absolute
 {
 	position: relative !important;
-	margin-top: 325px !important;
+	margin-top: $header_size !important;
 }
 
 h2
