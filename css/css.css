@@ -11,7 +11,7 @@ body {
 
 .blog_center {
   width: 960px;
-  height: 2500px;
+  height: auto;
   margin: 0 auto;
   /* h-pos v-pos blur-dist spread-dist color*/
   box-shadow: 0 0 35px 0 #222;
@@ -56,8 +56,8 @@ body {
     position: relative;
     top: 0;
     z-index: 0;
-    margin-top: 2rem;
     padding: 0 7rem;
+    padding-top: 2rem;
     text-align: justify; }
     .blog_center .blog_content h2 {
       text-align: center; }
@@ -67,22 +67,30 @@ body {
       font-family: Sanchez-Regular; }
     .blog_center .blog_content .post_footer {
       font-size: .75rem; }
+      .blog_center .blog_content .post_footer span:nth-child(2) {
+        display: block;
+        float: right;
+        font-style: italic; }
     .blog_center .blog_content .profile_link {
       color: #5757E7;
       font-weight: bold; }
+
+.red {
+  color: #B55; }
 
 .blog_header_fixed {
   position: fixed !important;
   top: -275px !important; }
 
 .blog_content_absolute {
-  position: absolute !important;
-  top: 325px !important; }
+  position: relative !important;
+  margin-top: 325px !important; }
 
 h2 {
   font-size: 2em; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 /*# sourceMappingURL=css.css.map */

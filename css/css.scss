@@ -6,6 +6,7 @@ $black: #555;
 $black_x2: #222;
 $shadow: #222;
 $blue: #5757E7;
+$red: #B55;
 
 $header_size: 325px;
 $blog_width: 960px;
@@ -27,7 +28,7 @@ body
 .blog_center
 {
 	width: $blog_width;
-	height: 2500px;
+	height: auto;
 	margin: 0 auto;
 	/* h-pos v-pos blur-dist spread-dist color*/
 	box-shadow: 0 0 35px 0 $shadow;
@@ -84,8 +85,8 @@ body
 		position: relative;
 		top: 0;
 		z-index: 0;
-		margin-top: 2rem;
 		padding: 0 7rem;
+		padding-top: 2rem;
 		
 		text-align: justify;
 
@@ -100,6 +101,13 @@ body
 		.post_footer
 		{
 			font-size: .75rem;
+
+			span:nth-child(2)
+			{
+				display: block;
+				float: right;
+				font-style: italic;
+			}
 		}
 
 		.profile_link
@@ -110,6 +118,8 @@ body
 	}
 }
 
+.red { color: $red; }
+
 .blog_header_fixed
 {
 	position: fixed !important;
@@ -118,8 +128,8 @@ body
 
 .blog_content_absolute
 {
-	position: absolute !important;
-	top: $header_size !important;
+	position: relative !important;
+	margin-top: 325px !important;
 }
 
 h2
@@ -130,4 +140,5 @@ h2
 a
 {
 	text-decoration: none;
+	color: inherit;
 }
