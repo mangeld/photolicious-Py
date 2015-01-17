@@ -20,12 +20,14 @@
 			</header>
 			<section class="blog_content">
 				<article class="blog_post">
+				{% autoescape false %}
 					<header><h2>Title that catches your attention</h2></header>
-					<p>Some pharagraph</p>
+					{{ postContent }}
 					<div class="post_footer">
 						<span>By <a href="#" class="profile_link">Mike</a> on Sep 30th of 1993 with much <i class="fa fa-heart red"></i></span>
 						<span><a href="#">View Replys (2)</a></span>
 					</div>
+				{% endautoescape %}
 				</article>
 			</section>
 		</section>
