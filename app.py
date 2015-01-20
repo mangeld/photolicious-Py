@@ -4,8 +4,13 @@ import mistune
 
 app = Flask(__name__)
 blog = Blog()
+f = open('README.md', 'r')
+text = ""
 
-data = mistune.markdown('This is an _h1_ ')
+for line in f:
+	text = text + line
+f.close()
+data = mistune.markdown(text)
 
 @app.route("/")
 def index():
