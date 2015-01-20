@@ -4,3 +4,4 @@ Prepros Build/*
 img/*
 prepros.cfg
 venv/*
+*.jpg
